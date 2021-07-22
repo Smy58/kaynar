@@ -1,0 +1,153 @@
+@import url(https://allfont.ru/allfont.css?fonts=romic);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 76px;
+    background-color: #A4C700;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.header__back-button {
+    border-color: transparent;
+    background-color: transparent;
+    width: min-content;
+    height: min-content;
+    margin-left: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title{
+    margin-left: 30px;
+    font-family: 'Romic', arial;
+    font-size: 24px;
+
+}
+
+.container{
+    margin-bottom: 24px;
+    
+    width: 90%;
+}
+
+.container:last-of-type {
+    margin-bottom: 45px;
+}
+
+.container__title{
+    margin: 0;
+
+    font-family: 'Roboto', arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.card{
+    margin-top: 29px;
+
+    background-color: #C4C4C4;
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+
+    height: 130px;
+
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    width: 100%;
+    margin-right: 16px;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.card__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image{
+    height: 130px;
+    width: 130px;
+}
+
+.card__title{
+    margin: 0;
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.card__describe{
+    margin: 0;
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.card__cost{
+    margin: 0;
+    align-self: flex-end;
+
+    margin-top: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.basket-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border-color: transparent;
+    background-color: #A4C700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.card-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-page__image {
+    width: 400px;
+    height: 400px;
+}
