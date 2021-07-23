@@ -4,6 +4,9 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header{
@@ -13,6 +16,9 @@ body{
     background-color: #A4C700;
     margin-bottom: 24px;
     align-items: center;
+
+    top: 0;
+    left: 0;
 }
 
 .header__back-button {
@@ -129,8 +135,10 @@ body{
 .basket-button {
     height: 50px;
     width: 50px;
-    border-radius: 25px;
-    border-color: transparent;
+    border-radius: 27px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
     background-color: #A4C700;
     display: flex;
     align-items: center;
@@ -141,13 +149,245 @@ body{
     right: 15px;
 }
 
+.basket-button_card-page {
+    position: absolute;
+    right: -10%;
+    bottom: -25%;
+}
+
 .card-page {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 400px;
 }
 
 .card-page__image {
     width: 400px;
     height: 400px;
+}
+
+.card-page__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 25px;
+}
+
+.card-page__about {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin: 0;
+}
+
+.card-page__cost {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    align-self: flex-end;
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 98px;
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-top-color: #A4C700;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+.footer__counter-block {
+    display: flex;
+    flex-direction: row;
+    height: 27px;
+    margin-left: 22px;
+}
+
+.footer__minus-button {
+    border: transparent;
+    background-color: #A4C700;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+}
+
+.footer__counter {
+    border: transparent;
+    background-color: white;
+    width: 46px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 2px;
+}
+
+.footer__plus-button {
+    border: transparent;
+    background-color: #A4C700;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+}
+
+.footer__button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 28px;
+
+    position: relative;
+}
+
+.footer__button-title {
+    background-color: #A4C700;
+    color: white;
+    height: 30px;
+    width: 142px;
+    border-radius: 15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.addon__name {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-left: 35px;
+
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.addon__name input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.addon__name input:checked ~ .checkmark {
+    background-color: #A4C700;
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.addon__name input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.card-page__addons-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.addon__cost {
+    margin: 0;
+    margin-right: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-page__addons {
+    margin-bottom: 27px;
+}
+
+.card-page__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    margin-right: 10px;
+    margin-bottom: 26px;
 }

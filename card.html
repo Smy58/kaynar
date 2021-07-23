@@ -16,7 +16,55 @@
     <div class="card-page">
         <img src="./lagman.jpg" alt="Лагман" class="card-page__image">
         <h2 class="card-page__name">Гуйру Лагман</h2>
-        <p class="card-page__about"></p>
+        <p class="card-page__about">Лагман с густым подливом из обжаренной телятины, 
+            крупно порезанными овощами и ароматными прянными 
+            специями</p>
+        <p class="card-page__cost">1000тг</p>
+        <h3 class="card-page__addons-title">Дополнение к блюду:</h3>
+        <div class="card-page__addons">
+            <div class="addon">
+                <label class="addon__name">Лазджан
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <p class="addon__cost"></p>
+            </div>
+            <div class="addon">
+                <label class="addon__name">Сыркя
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <p class="addon__cost">10тг</p>
+            </div>
+            <div class="addon">
+                <label class="addon__name">Третий параметр
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <p class="addon__cost">10тг</p>
+            </div>
+        </div>
+        <div class="card-page__total">
+            Итого: <div class="card-page__total-cost">2020тг</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__counter-block">
+            <button class="footer__minus-button">
+                <img src="./minus.svg" alt="Минус">
+            </button>
+            <div class="footer__counter">2</div>
+            <button class="footer__plus-button">
+                <img src="./plus.svg" alt="Плюс">
+            </button>
+        </div>
+        <button class="footer__button">
+            <div class="footer__button-title">Добавить</div>
+            <div class="basket-button basket-button_card-page">
+                <img src="./shopping-cart-symbol-for-e-commerce_icon-icons.com_56124.svg" alt="Корзина">
+            </div>
+        </button>
+        
     </div>
 </body>
 </html>
