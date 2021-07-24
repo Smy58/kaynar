@@ -520,3 +520,61 @@ body{
     justify-content: center;
     width: 27px;
 }
+
+.empty-attention {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-top: 70px;
+}
+
+.empty-attention__message {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.empty-attention__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.empty-attention__subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.empty-attention__button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+
+    background-color: #A4C700;
+    border: none;
+    width: 215px;
+    height: 46px;
+
+    border-radius: 23px;
+}
