@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="another.css">
     <title>Kaynar</title>
 </head>
 <body>
@@ -19,6 +20,101 @@
             <h2 class="empty-attention__title">Корзина пуста</h2>
             <p class="empty-attention__subtitle">У вас пока нету ни одного товара в корзине. Это можно исправить!</p>
             <button class="empty-attention__button">Вернуться в меню</button>
+        </div>
+    </div>
+
+    <div class="popup popup_type_adding">
+        <form class="form form_type_adding" noValidate>
+            <button class="form__close-button popup__close-button" type="button">
+                <img src="./close-icon.svg" alt="Закрыть" class="form__close-icon"/>
+            </button>
+            <h3 class="form__title"></h3>
+            <fieldset class="form__set">
+                
+                <label class="form__field">
+                    <h4 class="form__field-title">Имя:</h4>
+                    <input id="full-name-input" name="name" class="form__input" type="text" required minLength='2' maxLength='40'/>
+                    <span class='form__input-error' id='full-name-input-error'></span>
+                </label>
+                
+                <label class="form__field">
+                    <h4 class="form__field-title">Адрес:</h4>
+                    <input id="bio-input" name="adres" class="form__input" type="text" required minLength='2' maxLength='20'/>
+                    <span class='form__input-error' id='adres-input-error'></span>
+                </label>
+                
+                <label class="form__field">
+                    <h4 class="form__field-title">Номер телефона:</h4>
+                    <input id="bio-input" name="phone" class="form__input" type="text" required minLength='2' maxLength='20'/>
+                    <span class='form__input-error' id='phone-input-error'></span>
+                </label>
+                <button class="form__submit" type="submit">Сохранить</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="popup popup_type_adding">
+        <form class="form form_type_adding" noValidate>
+            <button class="form__close-button popup__close-button" type="button">
+                <img src="./close-icon.svg" alt="Закрыть" class="form__close-icon"/>
+            </button>
+            <h3 class="form__title"></h3>
+            <fieldset class="form__set">
+                
+                <label class="form__field">
+                    <h4 class="form__field-title">Имя:</h4>
+                    <input id="full-name-input" name="name" class="form__input" type="text" required minLength='2' maxLength='40'/>
+                    <span class='form__input-error' id='full-name-input-error'></span>
+                </label>
+                
+                <label class="form__field">
+                    <h4 class="form__field-title">Адрес:</h4>
+                    <input id="bio-input" name="adres" class="form__input" type="text" required minLength='2' maxLength='20'/>
+                    <span class='form__input-error' id='adres-input-error'></span>
+                </label>
+                
+                <label class="form__field">
+                    <h4 class="form__field-title">Номер телефона:</h4>
+                    <input id="bio-input" name="phone" class="form__input" type="text" required minLength='2' maxLength='20'/>
+                    <span class='form__input-error' id='phone-input-error'></span>
+                </label>
+                <button class="form__submit" type="submit">Сохранить</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="popup">
+        <div class="info-tooltip" noValidate>
+            <button class="info-tooltip__close-button popup__close-button" type="button">
+                <img src="./close-icon.svg" alt="Закрыть" class="info-tooltip-fullsize__close-icon"/>
+            </button>
+            <img src="./ok.svg" alt="Получилось!" class="info-tooltip__icon"/>
+            <p class="info-tooltip__title">Спасибо!<br>В течении 10 минут мы вам позвоним что бы подтвердить заказ!</p>
+            <button class="info-tooltip__button">Хорошо</button>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="info-tooltip" noValidate>
+            <button class="info-tooltip__close-button popup__close-button" type="button">
+                <img src="./close-icon.svg" alt="Закрыть" class="info-tooltip-fullsize__close-icon"/>
+            </button>
+            <img src="./time.svg" alt="Получилось!" class="info-tooltip__icon"/>
+            <h3 class="info-tooltip__title-message">Кафе закрыто</h3>
+            <p class="info-tooltip__title">В данный момент мы закрыты попробуйте заказать еще раз в рабочее время с 10:00 до 22:00</p>
+            <button class="info-tooltip__button">Вернуться</button>
+        </div>
+    </div>
+
+    <div class="popup popup_opened">
+        <div class="info-tooltip" noValidate>
+            <button class="info-tooltip__close-button popup__close-button" type="button">
+                <img src="./close-icon.svg" alt="Закрыть" class="info-tooltip-fullsize__close-icon"/>
+            </button>
+            <img src="./warning.svg" alt="Получилось!" class="info-tooltip__icon"/>
+            <h3 class="info-tooltip__title-message">Упс!<br>Что-то пошло не так...</h3>
+            <p class="info-tooltip__title">Просим прощения за неудобства. Повторите попытку еще раз чуть позже.</p>
+            <button class="info-tooltip__button">Вернуться</button>
         </div>
     </div>
 
